@@ -9,8 +9,4 @@ function TestIfCommandExists(Command, Message, Args){
 
     
 }
-
-function CommandDoesExist(Locales){
-    
-}
-module.exports = { TestIfCommandExists, CommandDoesExist };
+module.exports = { TestIfCommandExists };

@@ -3,6 +3,6 @@ module.exports = {
     description: 'Ping command',
 
     execute(Locale, message, args){
-        message.reply('PONG!!!!!!');
+        message.reply({ embeds: [Locales.DiscordLocale.Embed.EmbedCache(Locales, "Ping", "``Success``: Pong!")]});
     }
 }
