@@ -2,7 +2,7 @@
 const Discord = require('discord.js');
 
 //CLIENT
-const Client = new Discord.Client();
+const Client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS] });
 
 //TOKENS
 const Token = require('../../Client/Tokens/DiscordToken.env');

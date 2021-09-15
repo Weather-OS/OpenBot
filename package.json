@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Weather-OS/OpenBot/issues"
   },
-  "homepage": "https://github.com/Weather-OS/OpenBot#readme"
+  "homepage": "https://github.com/Weather-OS/OpenBot#readme",
+  "dependencies": {
+    "discord.js": "^13.1.0"
+  }
 }
