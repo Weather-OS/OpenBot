@@ -1,0 +1,24 @@
+{
+  "name": "openbot",
+  "version": "1.0.0",
+  "description": "An OpenSource Discord Javascript Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Weather-OS/OpenBot.git"
+  },
+  "keywords": [
+    "Discord.js",
+    "Discord",
+    "Bot"
+  ],
+  "author": "Weather",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Weather-OS/OpenBot/issues"
+  },
+  "homepage": "https://github.com/Weather-OS/OpenBot#readme"
+}
