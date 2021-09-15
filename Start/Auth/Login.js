@@ -1,9 +1,9 @@
-const Locales = require('../../Include/Locale/Locale.js');
-
+var Locales = require('../../Core/Locale/Locale.js');
 function Login(){
     Locales.DiscordLocale.Client.once('ready', () =>{
-        console.log('finalized');
+
     });
+    Locales.Events.OnMessage.OnMessageCommand(Locales);
     Locales.DiscordLocale.Client.login(Locales.DiscordLocale.Token.TOKEN);
 };
 
