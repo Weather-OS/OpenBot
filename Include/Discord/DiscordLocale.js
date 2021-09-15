@@ -8,4 +8,4 @@ const Client = new Discord.Client();
 const Token = require('../../Client/Tokens/DiscordToken.env');
 
 //EXPORT DISCORD MODULE
-module.exports = { Discord, Client };
+module.exports = { Discord, Client, Token };
