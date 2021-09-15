@@ -5,7 +5,7 @@ const Discord = require('discord.js');
 const Client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS] });
 
 //TOKENS
-const Token = require('../../Client/Tokens/DiscordToken.env');
+const Token = require('../../Client/Tokens/DiscordToken.js');
 
 //EXPORT DISCORD MODULE
 module.exports = { Discord, Client, Token };

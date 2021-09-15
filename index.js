@@ -1,3 +1,3 @@
-const Locales = require('./Include/Locale/Locale.js');
+const { Login } = require("./Start/Auth/Login");
 
-Locales.Auth.Login();
+Login();

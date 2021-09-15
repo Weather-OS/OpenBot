@@ -4,7 +4,7 @@ function Login(){
     Locales.DiscordLocale.Client.once('ready', () =>{
         console.log('finalized');
     });
-    Locales.DiscordLocale.Client.Login(Locales.DiscordLocale.Token);
+    Locales.DiscordLocale.Client.login(Locales.DiscordLocale.Token.TOKEN);
 };
 
 module.exports = { Login };
