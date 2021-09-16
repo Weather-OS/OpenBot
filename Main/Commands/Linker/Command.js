@@ -12,10 +12,12 @@ function CommandExecute(Command, message, args, CommandParsed){
         Command = Command.replace('.js', '');
         try {
             Locales.DiscordLocale.Client.Commands.set(CommandSet.name, CommandSet);
+            Locales.LogCommand(CommandSet.Logs, commandparse, message.author.username);
             Locales.DiscordLocale.Client.Commands.get(Command).execute(Locales, message, args);
         } catch (e){
-            console.log(`[${Locales.Colors.FgRed}Command.js${Locales.Colors.FgWhite}]${Locales.Colors.FgRed}Failed to execute: ${commandparse}.${Locales.Colors.FgWhite}`);
+            console.log(`[${Locales.Colors.FgRed}Command.js${Locales.Colors.FgWhite}]${Locales.Colors.FgRed} Failed to execute: ${commandparse}.${Locales.Colors.FgWhite}.`);
             message.channel.send({ embeds: [Locales.DiscordLocale.Embed.EmbedCache(Locales, "Error", "``error``: Command failed to execute.")]});
+            Locales.LogError(e, commandparse);
         }
 }
 

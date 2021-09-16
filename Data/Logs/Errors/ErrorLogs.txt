@@ -1,0 +1,2 @@
+[2021-9-16 12:15:48]: [../Regular/Test/Configure.js]: TypeError: Cannot read properties of undefined (reading 'Events')
+[2021-9-16 12:16:9]: [../Regular/Test/Configure.js]: TypeError: Cannot read properties of undefined (reading 'Events')

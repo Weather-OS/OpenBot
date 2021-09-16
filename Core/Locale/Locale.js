@@ -25,7 +25,13 @@
 
 //UTILIZATION
     //COLORS
-        var Colors = require('../Util/ColorRef.js');
+        var Colors = require('./Util/ColorRef.js');
+
+//LOGS
+    //ERROR LOG
+        var { LogError } = require('../Log/LogError.js');
+    //COMMAND LOG
+        var { LogCommand } = require('../Log/LogCommands.js');
 
 //EXPORT MODULES
-module.exports = { DiscordLocale, Execute, Events, Glob, os, Login, LocalSettings, Colors, LogStartup };
+module.exports = { DiscordLocale, Execute, Events, Glob, os, Login, LocalSettings, Colors, LogStartup, LogError, LogCommand };

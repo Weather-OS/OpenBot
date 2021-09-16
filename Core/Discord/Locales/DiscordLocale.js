@@ -31,5 +31,8 @@ var DiscordPrefix = JSON.parse(fs.readFileSync("./Settings/Prefix.json", "utf-8"
     //IS USER MODERATOR
         var ModHandler = require('../../../Main/Commands/Linker/ModeratorOnly.js');
 
+//LISTENER
+    var Listen = require('../../../Start/Events/ClientEvents/OnCollect.js');
+
 //EXPORT DISCORD MODULE
-module.exports = { Discord, Client, Token, Embed, EmbedSettings,  DiscordPrefix, DiscordLatency, Moderators, ModHandler };
+module.exports = { Discord, Client, Token, Embed, EmbedSettings,  DiscordPrefix, DiscordLatency, Moderators, ModHandler, Listen };

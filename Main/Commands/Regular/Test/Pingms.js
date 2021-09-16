@@ -1,6 +1,7 @@
 module.exports = {
     name: 'pingms',
     description: 'Pingms command',
+    Logs: 'Has used the command pingms to view ping data',
 
     execute(Locales, message, args){
         message.channel.send({ embeds: [Locales.DiscordLocale.Embed.EmbedCache(Locales, "Pingms", "``pingms `` Calculating ping...")]})
