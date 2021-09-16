@@ -2,7 +2,7 @@ var Locales = require('../../../Core/Locale/Locale.js');
 const path = require('path');
 const fs = require('fs');
 
-function CommandExecute(Locales, Command, message, args){
+function CommandExecute(Command, message, args){
         Locales.DiscordLocale.Client.Commands = new Locales.DiscordLocale.Discord.Collection();
         var commandparse = '.' + Command;
         commandparse = commandparse.replace('Main/Commands/', '');
@@ -20,9 +20,18 @@ function CommandExists(Command, message, args){
         let ReturnValue = false;
         for (let file = 0; file < res.length; file++){
             DEF[file] = res[file].split(/(\\|\/)/g).pop().toLowerCase();
-            if (DEF[file].includes(Command)){
+            var isModeratorCommand = res[file].indexOf("Moderators") !=-1? true: false;
+            if (DEF[file].includes(Command) && !isModeratorCommand){
                 ReturnValue = true;
-                CommandExecute(Locales, res[file], message, args);
+                CommandExecute(res[file], message, args);
+            } else if (DEF[file].includes(Command) && isModeratorCommand){
+                if (Locales.DiscordLocale.ModHandler.isModerator(Locales, message)){
+                    ReturnValue = true;
+                    CommandExecute(res[file], message, args);
+                } else {
+                    ReturnValue = true;
+                    message.channel.send({ embeds: [Locales.DiscordLocale.Embed.EmbedCache(Locales, "Acess Denied", "``error``: Not enough permissions to run this command.")]});
+                }
             }
         }
         if (err) {

@@ -19,5 +19,17 @@ const Token = require('../../../Client/Tokens/DiscordToken.js');
 //PREFIX
 var DiscordPrefix = JSON.parse(fs.readFileSync("./Settings/Prefix.json", "utf-8"));
 
+//CATCHES
+    //DISCORD LATENCY
+        var DiscordLatency = require('../Util/Catch/DiscordLatency.js');
+
+//PERMISSIONS
+    //MODERATORS
+        var Moderators = require('../Util/Permissions/Moderators.js');
+
+//MODERATOR HANDLER
+    //IS USER MODERATOR
+        var ModHandler = require('../../../Main/Commands/Linker/ModeratorOnly.js');
+
 //EXPORT DISCORD MODULE
-module.exports = { Discord, Client, Token, Embed, EmbedSettings,  DiscordPrefix };
+module.exports = { Discord, Client, Token, Embed, EmbedSettings,  DiscordPrefix, DiscordLatency, Moderators, ModHandler };
