@@ -6,6 +6,7 @@ function CommandExecute(Command, message, args, CommandParsed){
         Locales.DiscordLocale.Client.Commands = new Locales.DiscordLocale.Discord.Collection();
         var commandparse = '.' + Command;
         commandparse = commandparse.replace('Main/Commands/', '');
+        if(Locales.CoreSettings["DisabledCommands"].includes(CommandParsed)) return console.log(`[${Locales.Colors.FgYellow}Command.js${Locales.Colors.FgWhite}]${Locales.Colors.FgYellow} Tried to execute: ${commandparse}, But its a disabled command${Locales.Colors.FgWhite}.`);
         const CommandSet = require(commandparse);
         console.log(`[${Locales.Colors.FgBlue}Command.js${Locales.Colors.FgWhite}] ${message.author.username}, Is executing: ${commandparse}.`);
         Command = Command.split(/(\\|\/)/g).pop().toLowerCase();

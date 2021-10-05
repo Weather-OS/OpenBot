@@ -33,5 +33,8 @@
     //COMMAND LOG
         var { LogCommand } = require('../Log/LogCommands.js');
 
+//CORE SETTINGS
+    var CoreSettings = JSON.parse(fs.readFileSync("./Settings/CoreSettings.json", "utf-8"));
+
 //EXPORT MODULES
-module.exports = { DiscordLocale, Execute, Events, Glob, os, Login, LocalSettings, Colors, LogStartup, LogError, LogCommand };
+module.exports = { DiscordLocale, Execute, Events, Glob, os, Login, LocalSettings, Colors, LogStartup, LogError, LogCommand, CoreSettings };

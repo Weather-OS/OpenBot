@@ -1,6 +1,7 @@
 module.exports = {
     name: 'pingms',
     description: 'Pingms command',
+    emoji: "📡",
     Logs: 'Has used the command pingms to view ping data',
 
     execute(Locales, message, args){

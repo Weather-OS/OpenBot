@@ -3,6 +3,13 @@ function Login(Locales){
         Locales.LogStartup(Locales);
     });
     Locales.Events.OnMessage.OnMessageCommand(Locales);
+    Locales.DiscordLocale.RListen.Reactions(Locales);
+    if(Locales.CoreSettings["EmitReactionPackets?"] == "1"){
+        Locales.DiscordLocale.EmitReact(Locales);
+    }
+    if (Locales.CoreSettings["PacketLoggingEnabled?"] == "1"){
+        Locales.DiscordLocale.ActivatePacketReader(Locales);
+    }
     Locales.DiscordLocale.Client.login(Locales.DiscordLocale.Token.TOKEN);
 };
 

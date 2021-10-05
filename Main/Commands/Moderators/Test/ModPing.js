@@ -1,6 +1,7 @@
 module.exports = {
     name: 'modping',
     description: 'ModPing command',
+    emoji: "❓",
     Logs: 'Has used the command modping to modping',
 
     execute(Locales, message, args){
