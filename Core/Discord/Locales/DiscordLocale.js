@@ -26,10 +26,14 @@ var DiscordPrefix = JSON.parse(fs.readFileSync("./Settings/Prefix.json", "utf-8"
 //PERMISSIONS
     //MODERATORS
         var Moderators = require('../Util/Permissions/Moderators.js');
+    //ADMINISTRATORS
+        var Administrators = require('../Util/Permissions/Administrators.js')
 
 //MODERATOR HANDLER
     //IS USER MODERATOR
         var ModHandler = require('../../../Main/Commands/Linker/ModeratorOnly.js');
+    //IS USER ADMINISTRATOR
+        var AdminHandler = require('../../../Main/Commands/Linker/AdministratorOnly.js')
 
 //LISTENER
     var Listen = require('../../../Start/Events/ClientEvents/OnCollect.js');
@@ -55,4 +59,4 @@ var DiscordPrefix = JSON.parse(fs.readFileSync("./Settings/Prefix.json", "utf-8"
 
 
 //EXPORT DISCORD MODULE
-module.exports = { Discord, Client, Token, Embed, EmbedSettings,  DiscordPrefix, DiscordLatency, Moderators, ModHandler, Listen, React, RListen, Organize, GetSettings, EmitReact, ActivatePacketReader};
+module.exports = { Discord, Client, Token, Embed, EmbedSettings,  DiscordPrefix, DiscordLatency, Moderators, ModHandler, Listen, React, RListen, Organize, GetSettings, EmitReact, ActivatePacketReader, Administrators, AdminHandler};

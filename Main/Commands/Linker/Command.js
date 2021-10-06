@@ -31,16 +31,26 @@ function CommandExists(Command, message, args){
         for (let file = 0; file < res.length; file++){
             DEF[file] = res[file].split(/(\\|\/)/g).pop().toLowerCase();
             var isModeratorCommand = res[file].indexOf("Moderators") !=-1? true: false;
-            if (DEF[file].includes(Command) && !isModeratorCommand){
+            var isAdminCommand = res[file].indexOf("Admin") !=-1? true: false;
+            if (DEF[file].includes(Command) && !isModeratorCommand && !isAdminCommand){
                 ReturnValue = true;
                 CommandExecute(res[file], message, args, CommandParsed);
             } else if (DEF[file] == Command && isModeratorCommand){
-                if (Locales.DiscordLocale.ModHandler.isModerator(Locales, message)){
+                if (Locales.DiscordLocale.ModHandler.isModerator(Locales, message) || Locales.DiscordLocale.AdminHandler.isAdministrator(Locales, message)){
                     ReturnValue = true;
                     CommandExecute(res[file], message, args, CommandParsed);
                 } else {
                     ReturnValue = true;
-                    console.log(`[${Locales.Colors.FgYellow}Command.js${Locales.Colors.FgWhite}] ${Locales.Colors.FgYellow}${message.author.username}, Couldn't execute: ${res[file]}. User does not have enough permissions.${Locales.Colors.FgWhite}`);
+                    Locales.Log(Locales, Locales.ConsoleTypes.STDWARNING, "Command.js", `${message.author.username}, Couldn't execute: ${res[file]}. User does not have enough permissions.`);
+                    message.channel.send({ embeds: [Locales.DiscordLocale.Embed.EmbedCache(Locales, "Acess Denied", "``error``: Not enough permissions to run this command.")]});
+                }
+            } else if (DEF[file] == Command && isAdminCommand){
+                if(Locales.DiscordLocale.AdminHandler.isAdministrator(Locales, message)){
+                    ReturnValue = true;
+                    CommandExecute(res[file], message, args, CommandParsed);
+                } else {
+                    ReturnValue = true;
+                    Locales.Log(Locales, Locales.ConsoleTypes.STDWARNING, "Command.js", `${message.author.username}, Couldn't execute: ${res[file]}. User does not have enough permissions.`);
                     message.channel.send({ embeds: [Locales.DiscordLocale.Embed.EmbedCache(Locales, "Acess Denied", "``error``: Not enough permissions to run this command.")]});
                 }
             }
