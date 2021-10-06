@@ -11,7 +11,7 @@ function ActivatePacketReader(Locales){
     Locales.DiscordLocale.Client.on("raw", PACKET => {
         fs.appendFileSync('./Data/Logs/Console/ConsoleLogs.txt', `[${dateTime}]: PACKET: ${JSON.stringify(PACKET)}\n`, function (err) {
         if (err){
-            console.log(`[${Locales.Colors.FgRed}LogCommand.js${Locales.Colors.FgWhite}]${Locales.Colors.FgRed} CRITICAL ERROR OCCURED! EXITING${Locales.Colors.FgWhite}`);
+            Locales.Log(Locales, Locales.ConsoleTypes.STDERROR, "Packet.js", "CRITICAL ERROR OCCURED! EXITING...");
             process.exit(1);
         }
     });

@@ -255,3 +255,10 @@
 [2021-10-5 22:13:26]: [../Regular/Test/Help.js]: Weather, Has used the command help
 [2021-10-5 22:16:47]: [../Regular/Test/Help.js]: Weather, Has used the command help
 [2021-10-5 22:18:54]: [../Regular/Test/Help.js]: Weather, Has used the command help
+[2021-10-6 8:17:58]: [../Regular/Test/Help.js]: Weather, Has used the command help
+[2021-10-6 8:19:11]: [../Moderators/Test/ModPing.js]: Weather, Has used the command modping to modping
+[2021-10-6 8:19:16]: [../Regular/Test/Pingms.js]: Weather, Has used the command pingms to view ping data
+[2021-10-6 8:19:26]: [../Regular/Test/Pingms.js]: Weather, Has used the command pingms to view ping data
+[2021-10-6 8:27:28]: [../Regular/Test/Help.js]: Weather, Has used the command help
+[2021-10-6 8:27:52]: [../Regular/Test/Help.js]: Weather, Has used the command help
+[2021-10-6 8:28:50]: [../Regular/Test/Help.js]: Weather, Has used the command help

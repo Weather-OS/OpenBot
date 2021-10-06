@@ -9,7 +9,7 @@ function LogError(ErrorMessage, Filename){
 
     fs.appendFileSync('./Data/Logs/Errors/ErrorLogs.txt', `[${dateTime}]: [${Filename}]: ${ErrorMessage}\n`, function (err) {
         if (err){
-            console.log(`[${Locales.Colors.FgRed}LogError.js${Locales.Colors.FgWhite}]${Locales.Colors.FgRed} CRITICAL ERROR OCCURED! EXITING${Locales.Colors.FgWhite}`);
+            Locales.Log(Locales, Locales.ConsoleTypes.STDERROR, "LogError.js", "CRITICAL ERROR OCCURED! EXITING...");
             process.exit(1);
         }
     });

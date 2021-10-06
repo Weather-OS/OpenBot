@@ -4,10 +4,10 @@ function LogStartup(Locales){
     const StartupMessage = './Settings/StartupMessage.txt'
     try {
         const data = fs.readFileSync(StartupMessage, 'utf8');
-        console.log(`[${Locales.Colors.FgGreen}StartupMessage.js${Locales.Colors.FgWhite}]`);
+        Locales.Log(Locales, Locales.ConsoleTypes.STDSUCCESS, "StartupMessage.js", "");
         console.log(data);
     } catch (e) {
-        console.log(`[${Locales.Colors.FgRed}StartupMessage.js${Locales.Colors.FgWhite}]${Locales.Colors.FgRed} File not found: ${StartupMessage}${Locales.Colors.FgWhite}`);
+        Locales.Log(Locales, Locales.ConsoleTypes.STDERROR, "StartupMessage.js", `File not found: ${StartupMessage}`);
     }
 }
 

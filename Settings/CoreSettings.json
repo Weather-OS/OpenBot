@@ -2,5 +2,5 @@
     "PacketLoggingEnabled?": "1",
     "EmitReactionPackets?": "1",
     "DiscordLatencyEnabled?": "1",
-    "DisabledCommands": "ping"
+    "DisabledCommands": ""
 }

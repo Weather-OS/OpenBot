@@ -36,5 +36,11 @@
 //CORE SETTINGS
     var CoreSettings = JSON.parse(fs.readFileSync("./Settings/CoreSettings.json", "utf-8"));
 
+//CONSOLEREFS
+    var ConsoleTypes = require('./Util/ConsoleRef.js');
+
+//CONSOLELOGS
+    var { Log } = require('./Util/ConsoleLog.js');
+
 //EXPORT MODULES
-module.exports = { DiscordLocale, Execute, Events, Glob, os, Login, LocalSettings, Colors, LogStartup, LogError, LogCommand, CoreSettings };
+module.exports = { DiscordLocale, Execute, Events, Glob, os, Login, LocalSettings, Colors, LogStartup, LogError, LogCommand, CoreSettings, ConsoleTypes, Log };

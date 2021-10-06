@@ -6,14 +6,14 @@ function EmitReact(Locales){
         const emoji = packet.d.emoji.id ? `${packet.d.emoji.name}:${packet.d.emoji.id}` : packet.d.emoji.name;
         const reaction = message.reactions.cache.get(emoji);
             if (packet.t == 'MESSAGE_REACTION_ADD') {
-                if (packet.d.member.user.bot){
-                    //donothing();
-                } else {
+                if (!packet.d.member.user.bot){
                 Locales.DiscordLocale.Client.emit('messageReactionAddAfterBot', reaction, Locales.DiscordLocale.Client.users.cache.get(packet.d.user_id));
                 }
             }
             else if (packet.t == 'MESSAGE_REACTION_REMOVE') {
-                Locales.DiscordLocale.Client.emit('messageReactionRemoveAfterBot', reaction, Locales.DiscordLocale.Client.users.cache.get(packet.d.user_id));
+                if (!packet.d.member.user.bot){
+                    Locales.DiscordLocale.Client.emit('messageReactionRemoveAfterBot', reaction, Locales.DiscordLocale.Client.users.cache.get(packet.d.user_id));
+                }
             }
         });
     });

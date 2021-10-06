@@ -1,5 +1,5 @@
 const Locales = require('./Core/Locale/Locale.js');
 
-console.log(`[${Locales.Colors.FgBlue}index.js${Locales.Colors.FgWhite}]${Locales.Colors.FgGreen} Starting ${Locales.LocalSettings["Botname"]}${Locales.Colors.FgWhite}...`);
+Locales.Log(Locales, Locales.ConsoleTypes.STDCOMMENCE, "index.js", `Starting ${Locales.LocalSettings["Botname"]}...`);
 
 Locales.Login(Locales);
