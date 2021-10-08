@@ -268,3 +268,70 @@
 [2021-10-6 10:5:47]: [../Regular/Test/Help.js]: Weather, Has used the command help
 [2021-10-6 10:5:56]: [../Regular/Test/Help.js]: Weather, Has used the command help
 [2021-10-6 10:6:9]: [../Regular/Test/Help.js]: Weather, Has used the command help
+[2021-10-6 16:20:33]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 16:22:1]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 16:25:0]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 16:28:16]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 19:23:1]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 19:24:7]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 19:24:53]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 19:33:56]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 19:35:2]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 20:4:45]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 20:6:56]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 20:8:40]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 20:11:21]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 20:13:13]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 20:15:37]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 20:17:15]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 20:18:16]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 20:20:22]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 20:21:5]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 21:22:3]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 21:23:18]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 21:24:13]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 21:25:43]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-6 21:27:25]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-7 1:9:2]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-7 1:48:32]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-7 1:50:3]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-7 1:51:3]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-7 1:51:33]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-7 1:52:26]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-7 1:53:5]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-7 1:54:37]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-8 11:35:53]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-8 11:43:42]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-8 11:45:38]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-8 11:47:8]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command adminping to adminping
+[2021-10-8 11:51:37]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 11:54:26]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 11:55:26]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 11:56:19]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 11:56:41]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 11:57:52]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 11:59:32]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 12:0:47]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 12:2:46]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 12:3:54]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 12:5:13]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:2:43]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:2:52]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:3:31]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:6:1]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:6:16]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:6:35]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:7:15]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:7:21]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:9:58]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:10:44]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:11:27]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:11:52]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:12:24]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:12:38]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:16:19]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:17:29]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:19:39]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:19:55]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:20:44]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting
+[2021-10-8 13:21:29]: [../Admin/Tickets/Ticket.js]: Weather, Has used the command ticket to configure ticketting

@@ -7,4 +7,4 @@ module.exports = {
     execute(Locales, message, args){
         message.reply({ embeds: [Locales.DiscordLocale.Embed.EmbedCache(Locales, "Ping", "``Success`` Pong!")]});
     }
-}
+}عغذلا0-=ج89عتغ57-0ج89

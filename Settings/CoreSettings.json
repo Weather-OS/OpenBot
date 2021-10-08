@@ -1,6 +1,1 @@
-{
-    "PacketLoggingEnabled?": "1",
-    "EmitReactionPackets?": "1",
-    "DiscordLatencyEnabled?": "1",
-    "DisabledCommands": ""
-}
+{"PacketLoggingEnabled?":"1","EmitReactionPackets?":"1","DiscordLatencyEnabled?":"1","TicketSystemAvailable?":"0","TicketsCount":1,"TicketsCategory":"Non","DisabledCommands":""}

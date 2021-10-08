@@ -57,6 +57,11 @@ var DiscordPrefix = JSON.parse(fs.readFileSync("./Settings/Prefix.json", "utf-8"
 //PACKETLOGGER
     var { ActivatePacketReader } = require('../Util/Packet/Packet.js');
 
+//BUTTONS
+    var Button = require('../Util/Buttons/ButtonSettings.js');
+
+//TICKETTING SYSTEM
+    var { Ticket } = require('../../../Start/Auto/TickettingSystem.js');
 
 //EXPORT DISCORD MODULE
-module.exports = { Discord, Client, Token, Embed, EmbedSettings,  DiscordPrefix, DiscordLatency, Moderators, ModHandler, Listen, React, RListen, Organize, GetSettings, EmitReact, ActivatePacketReader, Administrators, AdminHandler};
+module.exports = { Discord, Client, Token, Embed, EmbedSettings,  DiscordPrefix, DiscordLatency, Moderators, ModHandler, Listen, React, RListen, Organize, GetSettings, EmitReact, ActivatePacketReader, Administrators, AdminHandler, Button, Ticket};

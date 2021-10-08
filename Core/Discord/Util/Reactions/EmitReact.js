@@ -11,9 +11,7 @@ function EmitReact(Locales){
                 }
             }
             else if (packet.t == 'MESSAGE_REACTION_REMOVE') {
-                if (!packet.d.member.user.bot){
                     Locales.DiscordLocale.Client.emit('messageReactionRemoveAfterBot', reaction, Locales.DiscordLocale.Client.users.cache.get(packet.d.user_id));
-                }
             }
         });
     });
