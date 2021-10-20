@@ -42,5 +42,11 @@
 //CONSOLELOGS
     var { Log } = require('./Util/ConsoleLog.js');
 
+//CONSOLECOMMAND
+    var { ActivateConsoleExecution } = require('../../Start/Auto/Console.js');
+
+//TEST IF CONSOLE COMMAND EXISTS
+    var { TestIfConsoleCommandExists } = require('../../Main/ConsoleCommands/Linker/Execute.js')
+
 //EXPORT MODULES
-module.exports = { DiscordLocale, Execute, Events, Glob, os, Login, LocalSettings, Colors, LogStartup, LogError, LogCommand, CoreSettings, ConsoleTypes, Log };
+module.exports = { DiscordLocale, Execute, Events, Glob, os, Login, LocalSettings, Colors, LogStartup, LogError, LogCommand, CoreSettings, ConsoleTypes, Log, ActivateConsoleExecution, TestIfConsoleCommandExists };

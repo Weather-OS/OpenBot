@@ -9,6 +9,13 @@ function CommandExecute(Command, message, args, CommandParsed){
         if(Locales.CoreSettings["DisabledCommands"].includes(CommandParsed)) return console.log(`[${Locales.Colors.FgYellow}Command.js${Locales.Colors.FgWhite}]${Locales.Colors.FgYellow} Tried to execute: ${commandparse}, But its a disabled command${Locales.Colors.FgWhite}.`);
         const CommandSet = require(commandparse);
         console.log(`[${Locales.Colors.FgBlue}Command.js${Locales.Colors.FgWhite}] ${message.author.username}, Is executing: ${commandparse}.`);
+        if(CommandSet.RequiredPermissions != "DEFAULTS"){
+            var PermissionsExist = Locales.DiscordLocale.CheckPermissions(Locales, CommandSet.RequiredPermissions, message, `Command.js -> ${commandparse}`);
+            if(PermissionsExist != "AVAIL_PERMISSIONS"){
+                message.channel.send({ embeds: [Locales.DiscordLocale.Embed.EmbedCache(Locales, "Missing permissions", `This bot is missing permission ${PermissionsExist}.\n Please check and make sure the bot has this permission in this server.`)]});
+                return;
+            }
+        }
         Command = Command.split(/(\\|\/)/g).pop().toLowerCase();
         Command = Command.replace('.js', '');
         try {
@@ -32,26 +39,27 @@ function CommandExists(Command, message, args){
             DEF[file] = res[file].split(/(\\|\/)/g).pop().toLowerCase();
             var isModeratorCommand = res[file].indexOf("Moderators") !=-1? true: false;
             var isAdminCommand = res[file].indexOf("Admin") !=-1? true: false;
-            if (DEF[file].includes(Command) && !isModeratorCommand && !isAdminCommand){
+            var isNotACommand = res[file].indexOf("Linker") !=-1? true: false;
+            if (DEF[file] == Command && !isModeratorCommand && !isAdminCommand && !isNotACommand){
                 ReturnValue = true;
                 CommandExecute(res[file], message, args, CommandParsed);
-            } else if (DEF[file] == Command && isModeratorCommand){
+            } else if (DEF[file] == Command && isModeratorCommand && !isNotACommand){
                 if (Locales.DiscordLocale.ModHandler.isModerator(Locales, message) || Locales.DiscordLocale.AdminHandler.isAdministrator(Locales, message)){
                     ReturnValue = true;
                     CommandExecute(res[file], message, args, CommandParsed);
                 } else {
                     ReturnValue = true;
                     Locales.Log(Locales, Locales.ConsoleTypes.STDWARNING, "Command.js", `${message.author.username}, Couldn't execute: ${res[file]}. User does not have enough permissions.`);
-                    message.channel.send({ embeds: [Locales.DiscordLocale.Embed.EmbedCache(Locales, "Acess Denied", "``error``: Not enough permissions to run this command.")]});
+                    message.channel.send({ embeds: [Locales.DiscordLocale.Embed.EmbedCache(Locales, "Access Denied", "``error``: Not enough permissions to run this command.")]});
                 }
-            } else if (DEF[file] == Command && isAdminCommand){
+            } else if (DEF[file] == Command && isAdminCommand && !isNotACommand){
                 if(Locales.DiscordLocale.AdminHandler.isAdministrator(Locales, message)){
                     ReturnValue = true;
                     CommandExecute(res[file], message, args, CommandParsed);
                 } else {
                     ReturnValue = true;
                     Locales.Log(Locales, Locales.ConsoleTypes.STDWARNING, "Command.js", `${message.author.username}, Couldn't execute: ${res[file]}. User does not have enough permissions.`);
-                    message.channel.send({ embeds: [Locales.DiscordLocale.Embed.EmbedCache(Locales, "Acess Denied", "``error``: Not enough permissions to run this command.")]});
+                    message.channel.send({ embeds: [Locales.DiscordLocale.Embed.EmbedCache(Locales, "Access Denied", "``error``: Not enough permissions to run this command.")]});
                 }
             }
         }

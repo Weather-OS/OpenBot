@@ -5,3 +5,6 @@
 [2021-10-5 22:12:55]: [../Regular/Test/Help.js]: TypeError: Cannot read properties of undefined (reading 'execute')
 [2021-10-6 16:20:33]: [../Admin/Tickets/Ticket.js]: RangeError [EMBED_FIELD_NAME]: MessageEmbed field names must be non-empty strings.
 [2021-10-6 16:22:1]: [../Admin/Tickets/Ticket.js]: RangeError [EMBED_FIELD_NAME]: MessageEmbed field names must be non-empty strings.
+[2021-10-9 18:13:20]: [../Commands/Help/Help.js]: ReferenceError: message is not defined
+[2021-10-9 18:14:4]: [../Linker/ConsoleCommand.js]: TypeError: Cannot read properties of undefined (reading 'execute')
+[2021-10-9 18:17:28]: [../Commands/Help/Help.js]: ReferenceError: message is not defined

@@ -14,7 +14,11 @@ function OnMessageAsync(Locales){
 function OnMessageCommand(Locales){
     Locales.DiscordLocale.Client.on('messageCreate', message =>{
         if(!message.content.startsWith(Locales.DiscordLocale.DiscordPrefix["Prefix"]) || message.author.bot) return;
-
+        var PermissionsExist = Locales.DiscordLocale.CheckPermissions(Locales, Locales.LocalSettings["OverallRequiredPermissions"], message, "ClientEvents.permissions(new OpenBotLocal.Permissions)");
+        if(PermissionsExist != "AVAIL_PERMISSIONS"){
+            message.channel.send({ embeds: [Locales.DiscordLocale.Embed.EmbedCache(Locales, "Missing permissions", `This bot is missing permission ${PermissionsExist}.\n Please check and make sure the bot has this permission in this server.`)]});
+            return;
+        }
         const args = message.content.slice(Locales.DiscordLocale.DiscordPrefix["Prefix"].length).split(/ +/);
         const command = args.shift().toLowerCase();
 

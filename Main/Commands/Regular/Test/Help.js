@@ -3,6 +3,7 @@ module.exports = {
     description: 'Help command',
     emoji: "🛠️",
     Logs: 'Has used the command help',
+    RequiredPermissions: 'DEFAULTS',
 
     async execute(Locales, message, args){
         Locales.DiscordLocale.GetSettings(Locales, message);

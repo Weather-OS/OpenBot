@@ -63,5 +63,11 @@ var DiscordPrefix = JSON.parse(fs.readFileSync("./Settings/Prefix.json", "utf-8"
 //TICKETTING SYSTEM
     var { Ticket } = require('../../../Start/Auto/TickettingSystem.js');
 
+//OVERWRITE ALL PERMISSIONS
+    var { OverwriteAllChannelPermissions } = require('../Util/Permissions/OverwriteAll.js');
+
+//CHECK PERMISSIONS
+    var { CheckPermissions } = require('../Util/Permissions/PermissionsHandler.js');
+
 //EXPORT DISCORD MODULE
-module.exports = { Discord, Client, Token, Embed, EmbedSettings,  DiscordPrefix, DiscordLatency, Moderators, ModHandler, Listen, React, RListen, Organize, GetSettings, EmitReact, ActivatePacketReader, Administrators, AdminHandler, Button, Ticket};
+module.exports = { Discord, Client, Token, Embed, EmbedSettings,  DiscordPrefix, DiscordLatency, Moderators, ModHandler, Listen, React, RListen, Organize, GetSettings, EmitReact, ActivatePacketReader, Administrators, AdminHandler, Button, Ticket, OverwriteAllChannelPermissions, CheckPermissions};

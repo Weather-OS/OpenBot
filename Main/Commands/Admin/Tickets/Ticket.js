@@ -6,6 +6,7 @@ module.exports = {
     description: 'Ticket command',
     emoji: "📫",
     Logs: 'Has used the command ticket to configure ticketting',
+    RequiredPermissions: 'MANAGE_CHANNELS MANAGE_GUILD',
 
     async execute(Locales, message, args){
 
